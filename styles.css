@@ -29,6 +29,10 @@ nav {
     font-weight: bold;
 }
 
+img {
+    width:100%;max-width:300px;margin:10px;
+}
+
 nav ul {
     list-style: none;
     display: flex;
