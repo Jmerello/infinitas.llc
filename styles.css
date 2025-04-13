@@ -33,6 +33,22 @@ img {
     width:100%;max-width:300px;margin:10px;
 }
 
+.hero {
+    background-image:url('images/warehouse.jpg');background-size:cover;background-position:center;padding:50px 20px;color:white;text-align:center;
+}
+
+.about {
+    background-image:url('images/office.jpg');background-size:cover;background-position:center;padding:20px;
+}
+
+.products {
+    background-image:url('images/supplies.jpg');background-size:cover;background-position:center;padding:20px;
+}
+
+.contact {
+    background-image:url('images/handshake.jpg');background-size:cover;background-position:center;padding:20px;
+}
+
 nav ul {
     list-style: none;
     display: flex;
