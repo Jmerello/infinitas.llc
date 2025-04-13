@@ -14,6 +14,10 @@
     align-items: flex-start;
 }
 
+.logo img {
+    max-width:150px;
+}
+
 .infinity {
     color: #228B22; /* Forest green */
     font-size: 30px;
