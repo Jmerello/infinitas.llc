@@ -75,6 +75,7 @@ nav ul li a:hover {
 
 main {
     flex: 1; /* Pushes footer down */
+    content: center;
 }
 
 .products {
