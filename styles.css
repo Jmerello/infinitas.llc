@@ -78,7 +78,7 @@ main {
     content: center;
 }
 
-.home {
+.index {
     padding: 40px 20px; /* More padding for content */
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/warehouse.jpg');
     background-size: cover; /* Full coverage */
@@ -92,28 +92,28 @@ main {
     text-align: center;
 }
 
-.home h1 {
+.index h1 {
     font-size: 36px;
     margin-bottom: 10px;
 }
 
-.home p {
+.index p {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.home ul {
+.index ul {
     list-style: none;
     margin: 10px 0;
     max-width: 1200px; /* Center content */
 }
 
-.home ul li {
+.index ul li {
     margin: 15px 0;
     font-size: 16px;
 }
 
-.home-image {
+.index-image {
     width: 100%;
     max-width: 300px;
     margin-top: 10px;
