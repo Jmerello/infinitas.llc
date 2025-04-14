@@ -74,20 +74,32 @@ nav ul li a:hover {
 
 main {
     flex: 1; /* Pushes footer down */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
 }
 
-.home {
-    padding: 40px 20px; /* More padding for content */
+.home, .about, .products, .contact {
+    padding: 40px 20px;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/warehouse.jpg');
-    background-size: cover; /* Full coverage */
+    background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Parallax effect */
-    color: white; /* Readable text */
-    min-height: 100vh; /* Full viewport height */
+    background-attachment: fixed;
+    color: white;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%; /* Ensure full width for background */
+}
+
+.home h1, .about h1, .products h1, .contact h1,
+.home p, .about p, .products p, .contact p,
+.home ul, .about ul, .products ul, .contact ul {
+    max-width: 50%; /* Constrain text to half the screen width */
+    margin-left: auto;
+    margin-right: auto; /* Center the text block */
 }
 
 .home h1 {
@@ -103,7 +115,7 @@ main {
 .home ul {
     list-style: none;
     margin: 10px 0;
-    max-width: 600px; /* Center content */
+    max-width: 1200px; /* Center content */
 }
 
 .home ul li {
@@ -145,7 +157,7 @@ main {
 .about ul {
     list-style: none;
     margin: 10px 0;
-    max-width: 600px; /* Center content */
+    max-width: 1000px; /* Center content */
 }
 
 .about ul li {
@@ -185,26 +197,24 @@ main {
 }
 
 .products ul {
-    list-style: none;
-    margin: 10px 0;
-    max-width: 600px;
-    display: grid; /* Use CSS Grid for three-column layout */
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    gap: 20px; /* Space between columns */
+    max-width: 50%; /* Override for products to match text constraint */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .products ul li {
-    margin: 0; /* Remove default margin */
+    margin: 0;
     font-size: 16px;
     display: flex;
-    flex-direction: column; /* Stack text and image vertically within each item */
+    flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
 .product-img {
     width: 100%;
-    max-width: 200px; /* Smaller max-width to fit three columns */
+    max-width: 200px;
     margin-top: 10px;
     border-radius: 5px;
 }
@@ -236,7 +246,7 @@ main {
 .contact ul {
     list-style: none;
     margin: 10px 0;
-    max-width: 600px; /* Center content */
+    max-width: 1200px; /* Center content */
 }
 
 .contact ul li {
@@ -284,6 +294,12 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
+    
+    .home h1, .about h1, .products h1, .contact h1,
+    .home p, .about p, .products p, .contact p,
+    .home ul, .about ul, .products ul, .contact ul {
+        max-width: 90%; /* Wider on mobile for readability */
+    }
 
     .products ul {
         grid-template-columns: 1fr; /* Single column on mobile */
