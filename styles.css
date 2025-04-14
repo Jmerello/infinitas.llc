@@ -10,7 +10,6 @@ body {
     color: #333;
     display: flex; /* Flexbox for footer */
     flex-direction: column;
-    content: center;
     min-height: 100vh; /* Full viewport height */
 }
 
@@ -75,7 +74,6 @@ nav ul li a:hover {
 
 main {
     flex: 1; /* Pushes footer down */
-    content: center;
 }
 
 .index {
@@ -90,32 +88,29 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    content: center;
+    max-width: 1200px; /* Constrain content */
+    margin: 0 auto; /* Center section */
 }
 
 .index h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    content: center;
 }
 
 .index p {
     font-size: 18px;
     margin-bottom: 20px;
-    content: center;
 }
 
 .index ul {
     list-style: none;
     margin: 10px 0;
-    max-width: 1200px;
-    content: center;
+    max-width: 1200px; /* Center content */
 }
 
 .index ul li {
     margin: 15px 0;
     font-size: 16px;
-    content: center;
 }
 
 .index-image {
@@ -123,7 +118,6 @@ main {
     max-width: 300px;
     margin-top: 10px;
     border-radius: 5px;
-    content: center;
 }
 
 .about {
@@ -297,19 +291,31 @@ footer a:hover {
         margin: 5px 10px;
     }
 
-    .products h1 {
+    .index h1,
+    .products h1,
+    .about h1,
+    .contact h1 {
         font-size: 24px;
     }
 
-    .products p {
+    .index p,
+    .products p,
+    .about p,
+    .contact p {
         font-size: 16px;
     }
 
-    .product-img {
+    .index-image,
+    .product-img,
+    .about-img,
+    .contact-img {
         max-width: 200px;
     }
 
-    .products {
+    .index,
+    .products,
+    .about,
+    .contact {
         padding: 20px 10px; /* Adjust padding for mobile */
         min-height: auto; /* Allow natural height on mobile */
     }
