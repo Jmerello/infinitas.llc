@@ -90,27 +90,32 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    content: center;
 }
 
 .index h1 {
     font-size: 36px;
     margin-bottom: 10px;
+    content: center;
 }
 
 .index p {
     font-size: 18px;
     margin-bottom: 20px;
+    content: center;
 }
 
 .index ul {
     list-style: none;
     margin: 10px 0;
-    max-width: 1200px; /* Center content */
+    max-width: 1200px;
+    content: center;
 }
 
 .index ul li {
     margin: 15px 0;
     font-size: 16px;
+    content: center;
 }
 
 .index-image {
@@ -118,6 +123,7 @@ main {
     max-width: 300px;
     margin-top: 10px;
     border-radius: 5px;
+    content: center;
 }
 
 .about {
