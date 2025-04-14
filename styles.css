@@ -186,6 +186,19 @@ main {
     text-align: center;
 }
 
+.product-link {
+    text-decoration: none; /* Remove underline from link */
+    color: white; /* Match existing text color */
+    display: flex; /* Inherit flex behavior for text+image stacking */
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center content */
+    width: 100%; /* Ensure link fills grid cell */
+}
+
+.product-link:hover {
+    text-decoration: underline; /* Optional: underline text on hover */
+}
+
 .products h1 {
     font-size: 36px;
     margin-bottom: 10px;
