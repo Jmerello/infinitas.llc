@@ -78,6 +78,90 @@ main {
     content: center;
 }
 
+.home {
+    padding: 40px 20px; /* More padding for content */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/warehouse.jpg');
+    background-size: cover; /* Full coverage */
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    color: white; /* Readable text */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.home ul {
+    list-style: none;
+    margin: 10px 0;
+    max-width: 1200px; /* Center content */
+}
+
+.home ul li {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.home-image {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.about {
+    padding: 40px 20px; /* More padding for content */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/warehouse.jpg');
+    background-size: cover; /* Full coverage */
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    color: white; /* Readable text */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about ul {
+    list-style: none;
+    margin: 10px 0;
+    max-width: 1200px; /* Center content */
+}
+
+.about ul li {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
 .products {
     padding: 40px 20px; /* More padding for content */
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/warehouse.jpg');
@@ -114,6 +198,48 @@ main {
 }
 
 .product-img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.contact {
+    padding: 40px 20px; /* More padding for content */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/warehouse.jpg');
+    background-size: cover; /* Full coverage */
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    color: white; /* Readable text */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    list-style: none;
+    margin: 10px 0;
+    max-width: 1200px; /* Center content */
+}
+
+.contact ul li {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.contact-img {
     width: 100%;
     max-width: 300px;
     margin-top: 10px;
