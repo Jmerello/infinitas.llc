@@ -20,7 +20,7 @@ header {
     position: sticky; /* Sticky header */
     top: 0;
     width: 100%;
-    z-index: 1000; /* Above other elements */
+    z-index: 500; /* Above other elements */
 }
 
 nav {
